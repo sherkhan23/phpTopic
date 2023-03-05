@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions>
+<!-- —Определение сервиса -->
+    <service name="SmsService">
+        <port name="SmsServicePort" binding="tns:SmsServiceBinding">
+            <soap:address location="http://localhost:80/smsservice.php" />
+        </port>
+    </service>
+</definitions>
+

@@ -1,0 +1,14 @@
+
+<!-- Модуль SOAP может использоваться для написания как серверной, так и клиентской части. Он реализует спецификации » SOAP 1.1, » SOAP 1.2 и » WSDL 1.1.-->
+<!--  SOAP – протокол используемый для реализации удаленного вызова процедур и в качестве транспорта он использует XML!-->
+<!-- WSDL – язык описания веб-сервисов и доступа к ним, основанный на языке XML-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+ <soap:Body>
+  <GetHolidaysForYear xmlns="http://www.holidaywebservice.com/HolidayService_v2/">
+    <countryCode>GreatBritain</countryCode>
+    <year>2019</year>
+  </GetHolidaysForYear>
+ </soap:Body>
+</soap:Envelope>

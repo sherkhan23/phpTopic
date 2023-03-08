@@ -1,5 +1,5 @@
 <?php
-
+ // PHP Data Objects – это прослойка, которая предлагает универсальный способ работы с несколькими базами данных.»
 try {
     $connection = new PDO("mysql:host=localhost;dbname=mysite;charset=utf8", "root","root");
     $connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT );

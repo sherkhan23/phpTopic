@@ -1,0 +1,47 @@
+https://habr.com/ru/post/208442/ от сайта
+аббревиатура пяти основных принципов дизайна классов в объектно-ориентированном проектировании
+— Single responsibility, Open-closed, Liskov substitution, Interface segregation и Dependency inversion.
+
+Принцип единственной ответственности (Single responsibility)
+На каждый объект должна быть возложена одна единственная обязанность».
+Т.е. другими словами — конкретный класс должен решать конкретную задачу — ни больше, ни меньше.
+
+// The SOLID principle (S - Single Responsibility Principle) states that every class should have only one responsibility and should only change for one reason. This means that each class should be specialized to perform a specific task and should not contain code that is not related to its primary responsibility.
+
+
+Open-closed
+"программные сущности должны быть открыты для расширения, но закрыты для модификации"
+
+
+Liskov substitution
+The SOLID principle (L - Liskov Substitution Principle) states that objects of a superclass should be able
+to be replaced with objects of its subclasses without affecting the correctness of the program.
+This means that subclasses should be able to be used as if they were the superclass,
+without causing any unexpected behavior or breaking any assumptions.
+
+«Объекты в программе могут быть заменены их наследниками без изменения свойств программы».
+Своими словами я бы это сказал так — при использовании наследника класса результат выполнения кода должен
+быть предсказуем и не изменять свойств метод.
+
+Interface segregation
+The SOLID principle (I - Interface Segregation Principle) states that a client should not be forced to depend on methods
+it does not use. This means that we should design our interfaces in a way that only requires clients to implement
+the methods that they actually need.
+
+Много специализированных интерфейсов лучше, чем один универсальный»
+Соблюдение этого принципа необходимо для того, чтобы классы-клиенты использующий/реализующий интерфейс знали только о
+тех методах, которые они используют, что ведёт к уменьшению количества неиспользуемого кода.
+
+
+Dependency inversion
+
+The SOLID principle (D - Dependency Inversion Principle) states that high-level modules should not depend on
+low-level modules. Instead, both should depend on abstractions. In addition, abstractions should not depend on details,
+but details should depend on abstractions. This means that we should depend on abstractions and not concrete
+implementations.
+
+Принцип гласит — «Зависимости внутри системы строятся на основе абстракций.
+Модули верхнего уровня не зависят от модулей нижнего уровня. Абстракции не должны зависеть от деталей.
+Детали должны зависеть от абстракций». Данное определение можно сократить — «зависимости должны строится относительно
+ абстракций, а не деталей».
+

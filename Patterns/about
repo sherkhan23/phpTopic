@@ -1,0 +1,43 @@
+Шаблоны проектирования — это способ решения периодически возникающих проблем.
+Точнее, это руководства по решению конкретных проблем.
+Это не классы, пакеты или библиотеки, которые вы можете вставить в своё приложение и ожидать волшебства.
+
+-- https://refactoring.guru/ru/design-patterns/catalog изучил
+
+Поведенческие шаблоны проектирования связаны с алгоритмами и распределением обязанностей между объектами.
+
+Creational design patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+
+Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
+
+
+Singltone
+Одиночка — это порождающий паттерн проектирования, который гарантирует, что у класса есть только один экземпляр,
+и предоставляет к нему глобальную точку доступа.
+
+
+Chain responsibility
+Цепочка обязанностей — это поведенческий паттерн проектирования, который позволяет передавать запросы
+последовательно по цепочке обработчиков. Каждый последующий обработчик решает, может ли он обработать запрос сам
+и стоит ли передавать запрос дальше по цепи.
+
+Chain of responsibility is a design pattern that allows you to pass requests along a chain of handlers.
+Each handler in the chain can either handle the request or pass it on to the next handler in the chain.
+his pattern is useful when you have a series of operations that need to be performed on a request, and each
+ operation can be handled by a different object.
+
+
+Strategy
+Стратегия — это поведенческий паттерн проектирования, который определяет семейство схожих алгоритмов и помещает
+ каждый из них в собственный класс, после чего алгоритмы можно взаимозаменять прямо во время исполнения программы.
+
+Active record
+ Active Record проста: мы храним бизнес-логику с логикой хранения сущности. Иными словами, если очень
+  упрощенно, каждой табличке в БД соответствует класс сущности вместе с поведением.
+
+
+Adapter
+Адаптер — это структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе.
+
+
+
